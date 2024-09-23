@@ -36,70 +36,6 @@ menuBurgerClose.addEventListener('click', function () {
     navigation.classList.remove('open');
 });
 
-// ------ Passenger-window ------
-// let choosePassenger = document.querySelector('.choose-passenger'),
-//     choosePassengerBtn = document.querySelectorAll('.choose-passenger__btn'),
-//     passengerWindow = document.querySelectorAll('.passenger-window'),
-//     passengerBtns = document.querySelectorAll('.passenger-btns__btn')
-//     travellersBtns = document.querySelectorAll('.travellersBtn'),
-//     cabinClassBtns = document.querySelectorAll('.cabinClassBtn'),
-//     travellersCounts = document.querySelectorAll('.travellers-counts'),
-//     cabinClasses = document.querySelectorAll('.cabin-class');
-//
-// if (choosePassenger) {
-//     function addActiveClass() {
-//         passengerBtns.forEach(pasBtns => {
-//             pasBtns.addEventListener('click', () => {
-//                 const btnsActive = document.querySelectorAll('.passenger-btns__btn.passenger-btns__btn_active');
-//                 btnsActive.forEach(typeIsActive => {
-//                     typeIsActive.classList.remove('passenger-btns__btn_active')
-//                 })
-//                 pasBtns.classList.add('passenger-btns__btn_active');
-//             })
-//         })
-//     }
-//
-//     cabinClassBtns.forEach(cabinClassBtn => {
-//         cabinClassBtn.addEventListener("click", function () {
-//             let cabinBlock = cabinClassBtn.parentElement.parentElement.nextElementSibling.querySelector('.cabin-class')
-//             let travellersBlock = cabinClassBtn.parentElement.parentElement.nextElementSibling.querySelector('.travellers-counts')
-//             travellersBlock.style.display = 'none';
-//             cabinBlock.style.display = 'block';
-//             addActiveClass()
-//         });
-//     });
-//
-//     travellersBtns.forEach(travellersBtn => {
-//         travellersBtn.addEventListener("click", function () {
-//             let cabinBlock = travellersBtn.parentElement.parentElement.nextElementSibling.querySelector('.cabin-class')
-//             let travellersBlock = travellersBtn.parentElement.parentElement.nextElementSibling.querySelector('.travellers-counts')
-//             travellersBlock.style.display = 'block';
-//             cabinBlock.style.display = 'none';
-//             addActiveClass()
-//         });
-//     });
-//
-//     choosePassengerBtn.forEach(choosePassengerBtn => {
-//         choosePassengerBtn.addEventListener("click", function (e) {
-//             e.stopPropagation()
-//             const pasWindow = choosePassengerBtn.nextElementSibling;
-//             pasWindow.classList.toggle('show');
-//         });
-//     })
-//
-//     passengerWindow.forEach(pasWindow => {
-//         pasWindow.addEventListener("click", function (e) {
-//             e.stopPropagation()
-//         });
-//     })
-//
-//     if (![...passengerWindow].some(pasWindow => pasWindow.classList.contains('show'))) {
-//         document.addEventListener("click", function () {
-//             passengerWindow.forEach(pasWindow => pasWindow.classList.remove('show'));
-//         });
-//     }
-// }
-
 // ------ According filters ------
 let accordingFiltersBtn = document.querySelectorAll('.according-filters-btn'),
     accordingFiltersContent = document.querySelectorAll('.according-filters-content');
@@ -325,3 +261,6 @@ if (rangeSection) {
 //         seateInfo.classList.remove('show')
 //     })
 // })
+
+
+

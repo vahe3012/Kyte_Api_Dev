@@ -73,31 +73,31 @@
                                         </div>
                                     </div>
                                     <div class="choose-passenger">
-                                        <button type="button" class="choose-passenger__btn">
-                                            1 Passenger
+                                        <button type="button" class="choose-passenger__btn choose-pas-btn1">
+                                            <span class="choose-passenger__count choose-passenger-count1"> 3 </span> Passenger
                                             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M17.0572 6.28543C16.8345 6.06281 16.5325 5.93774 16.2177 5.93774C15.9028 5.93774 15.6008 6.06281 15.3781 6.28543L9.49997 12.1636L3.62185 6.28543C3.39788 6.06911 3.09792 5.94942 2.78656 5.95213C2.4752 5.95483 2.17736 6.07972 1.95719 6.29989C1.73702 6.52006 1.61213 6.8179 1.60942 7.12926C1.60672 7.44062 1.72641 7.74059 1.94272 7.96455L8.66041 14.6822C8.8831 14.9049 9.18509 15.0299 9.49997 15.0299C9.81486 15.0299 10.1168 14.9049 10.3395 14.6822L17.0572 7.96455C17.2798 7.74186 17.4049 7.43987 17.4049 7.12499C17.4049 6.81011 17.2798 6.50812 17.0572 6.28543Z" fill="#142A38"/>
                                             </svg>
                                         </button>
-                                        <div class="passenger-window">
+                                        <div class="passenger-window pas-window1">
                                             <div class="passenger-window-header">
                                                 <div class="passenger-btns">
-                                                    <button type="button" class="travellersBtn passenger-btns__btn passenger-btns__btn_active">Travellers</button>
-                                                    <button type="button" class="cabinClassBtn passenger-btns__btn">Cabin Class</button>
+                                                    <button type="button" class="travellersBtn1  passenger-btns__btn passenger-btns__btn_active">Travellers</button>
+                                                    <button type="button" class="cabinClassBtn1 passenger-btns__btn">Cabin Class</button>
                                                 </div>
                                             </div>
                                             <div class="passenger-window-content">
-                                                <p class="passenger-way-name">Yerevan to Beirut  13 - 20 Feb</p>
-                                                <div class="travellers-counts">
+                                                <p class="passenger-way-name">Yerevan to Beirut 13 - 20 Feb</p>
+                                                <div class="travellers-counts travellers-counts1">
                                                     <div class="travellers-counts__item">
                                                         <div class="passenger-info">
                                                             <p class="passenger-info__title">Adults</p>
                                                             <span class="passenger-info__text"> > 12 years</span>
                                                         </div>
                                                         <div class="count-row">
-                                                            <button type="button" class="decrement-btn">-</button>
-                                                            <input type="number" class="quantity-input" name="quantity" value="1">
-                                                            <button type="button" class="increment-btn">+</button>
+                                                            <button type="button" class="decrement-btn decrement-btn1">-</button>
+                                                            <input type="number" class="quantity-input quantity-input1" name="quantity" value="1" id="adults1" >
+                                                            <button type="button" class="increment-btn increment-btn1">+</button>
                                                         </div>
                                                     </div>
                                                     <div class="travellers-counts__item">
@@ -106,9 +106,9 @@
                                                             <span class="passenger-info__text"> 2 - 12 years</span>
                                                         </div>
                                                         <div class="count-row">
-                                                            <button type="button" class="decrement-btn">-</button>
-                                                            <input type="number" class="quantity-input" name="quantity" value="1">
-                                                            <button type="button" class="increment-btn">+</button>
+                                                            <button type="button" class="decrement-btn decrement-btn1">-</button>
+                                                            <input type="number" class="quantity-input quantity-input1" name="quantity" value="1" id="children1">
+                                                            <button type="button" class="increment-btn increment-btn1">+</button>
                                                         </div>
                                                     </div>
                                                     <div class="travellers-counts__item">
@@ -117,20 +117,20 @@
                                                             <span class="passenger-info__text"> 0 - 1 years</span>
                                                         </div>
                                                         <div class="count-row">
-                                                            <button type="button" class="decrement-btn">-</button>
-                                                            <input type="number" class="quantity-input" name="quantity" value="1">
-                                                            <button type="button" class="increment-btn">+</button>
+                                                            <button type="button" class="decrement-btn decrement-btn1">-</button>
+                                                            <input type="number" class="quantity-input quantity-input1" name="quantity" value="1" id="infants1">
+                                                            <button type="button" class="increment-btn increment-btn1">+</button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="cabin-class">
+                                                <div class="cabin-class cabin-class1">
                                                     <div class="cabin-class__item">
                                                         <div class="passenger-info">
                                                             <p class="passenger-info__title">Economy Class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox" checked>
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox1" name="cabin class checkbox" checked>
                                                         </div>
                                                     </div>
                                                     <div class="cabin-class__item">
@@ -138,7 +138,7 @@
                                                             <p class="passenger-info__title">Premium Economy class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox1" name="cabin class checkbox">
                                                         </div>
                                                     </div>
                                                     <div class="cabin-class__item">
@@ -146,7 +146,7 @@
                                                             <p class="passenger-info__title">Business Class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox1" name="cabin class checkbox">
                                                         </div>
                                                     </div>
                                                     <div class="cabin-class__item">
@@ -154,13 +154,13 @@
                                                             <p class="passenger-info__title">First Class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox1" name="cabin class checkbox">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="passenger-window-footer">
-                                                <button type="button" class="passenger-done-btn">
+                                                <button type="button" class="passenger-done-btn pas-done-btn1">
                                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 2L15 15M15 15H3.62471M15 15V3.62471" stroke="#FF6B00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                     </svg>
@@ -209,31 +209,31 @@
                                         </div>
                                     </div>
                                     <div class="choose-passenger">
-                                        <button type="button" class="choose-passenger__btn">
-                                            1 Passenger
+                                        <button type="button" class="choose-passenger__btn choose-pas-btn2">
+                                            <span class="choose-passenger__count choose-passenger-count2"> 3 </span> Passenger
                                             <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M17.0572 6.28543C16.8345 6.06281 16.5325 5.93774 16.2177 5.93774C15.9028 5.93774 15.6008 6.06281 15.3781 6.28543L9.49997 12.1636L3.62185 6.28543C3.39788 6.06911 3.09792 5.94942 2.78656 5.95213C2.4752 5.95483 2.17736 6.07972 1.95719 6.29989C1.73702 6.52006 1.61213 6.8179 1.60942 7.12926C1.60672 7.44062 1.72641 7.74059 1.94272 7.96455L8.66041 14.6822C8.8831 14.9049 9.18509 15.0299 9.49997 15.0299C9.81486 15.0299 10.1168 14.9049 10.3395 14.6822L17.0572 7.96455C17.2798 7.74186 17.4049 7.43987 17.4049 7.12499C17.4049 6.81011 17.2798 6.50812 17.0572 6.28543Z" fill="#142A38"/>
                                             </svg>
                                         </button>
-                                        <div class="passenger-window">
+                                        <div class="passenger-window pas-window2">
                                             <div class="passenger-window-header">
                                                 <div class="passenger-btns">
-                                                    <button type="button" class="travellersBtn passenger-btns__btn passenger-btns__btn_active">Travellers</button>
-                                                    <button type="button" class="cabinClassBtn passenger-btns__btn">Cabin Class</button>
+                                                    <button type="button" class="travellersBtn2  passenger-btns__btn passenger-btns__btn_active">Travellers</button>
+                                                    <button type="button" class="cabinClassBtn2 passenger-btns__btn">Cabin Class</button>
                                                 </div>
                                             </div>
                                             <div class="passenger-window-content">
-                                                <p class="passenger-way-name">Yerevan to Beirut  13 - 20 Feb</p>
-                                                <div class="travellers-counts">
+                                                <p class="passenger-way-name">Yerevan to Beirut 13 - 20 Feb</p>
+                                                <div class="travellers-counts travellers-counts2">
                                                     <div class="travellers-counts__item">
                                                         <div class="passenger-info">
                                                             <p class="passenger-info__title">Adults</p>
                                                             <span class="passenger-info__text"> > 12 years</span>
                                                         </div>
                                                         <div class="count-row">
-                                                            <button type="button" class="decrement-btn">-</button>
-                                                            <input type="number" class="quantity-input" name="quantity" value="1">
-                                                            <button type="button" class="increment-btn">+</button>
+                                                            <button type="button" class="decrement-btn decrement-btn2">-</button>
+                                                            <input type="number" class="quantity-input quantity-input2" name="quantity" value="1" id="adults2" >
+                                                            <button type="button" class="increment-btn increment-btn2">+</button>
                                                         </div>
                                                     </div>
                                                     <div class="travellers-counts__item">
@@ -242,9 +242,9 @@
                                                             <span class="passenger-info__text"> 2 - 12 years</span>
                                                         </div>
                                                         <div class="count-row">
-                                                            <button type="button" class="decrement-btn">-</button>
-                                                            <input type="number" class="quantity-input" name="quantity" value="1">
-                                                            <button type="button" class="increment-btn">+</button>
+                                                            <button type="button" class="decrement-btn decrement-btn2">-</button>
+                                                            <input type="number" class="quantity-input quantity-input2" name="quantity" value="1" id="children2">
+                                                            <button type="button" class="increment-btn increment-btn2">+</button>
                                                         </div>
                                                     </div>
                                                     <div class="travellers-counts__item">
@@ -253,20 +253,20 @@
                                                             <span class="passenger-info__text"> 0 - 1 years</span>
                                                         </div>
                                                         <div class="count-row">
-                                                            <button type="button" class="decrement-btn">-</button>
-                                                            <input type="number" class="quantity-input" name="quantity" value="1">
-                                                            <button type="button" class="increment-btn">+</button>
+                                                            <button type="button" class="decrement-btn decrement-btn2">-</button>
+                                                            <input type="number" class="quantity-input quantity-input2" name="quantity" value="1" id="infants2">
+                                                            <button type="button" class="increment-btn increment-btn2">+</button>
                                                         </div>
                                                     </div>
                                                 </div>
 
-                                                <div class="cabin-class">
+                                                <div class="cabin-class cabin-class2">
                                                     <div class="cabin-class__item">
                                                         <div class="passenger-info">
                                                             <p class="passenger-info__title">Economy Class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox" checked>
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox2" name="cabin class checkbox" checked>
                                                         </div>
                                                     </div>
                                                     <div class="cabin-class__item">
@@ -274,7 +274,7 @@
                                                             <p class="passenger-info__title">Premium Economy class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox2" name="cabin class checkbox">
                                                         </div>
                                                     </div>
                                                     <div class="cabin-class__item">
@@ -282,7 +282,7 @@
                                                             <p class="passenger-info__title">Business Class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox2" name="cabin class checkbox">
                                                         </div>
                                                     </div>
                                                     <div class="cabin-class__item">
@@ -290,13 +290,13 @@
                                                             <p class="passenger-info__title">First Class</p>
                                                         </div>
                                                         <div class="cabin-class-check">
-                                                            <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                            <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox2" name="cabin class checkbox">
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="passenger-window-footer">
-                                                <button type="button" class="passenger-done-btn">
+                                                <button type="button" class="passenger-done-btn pas-done-btn2">
                                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <path d="M2 2L15 15M15 15H3.62471M15 15V3.62471" stroke="#FF6B00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                     </svg>
@@ -309,31 +309,31 @@
                             </div>
                             <div class="flights-way-block multiCity-block"  data-category="multiCity">
                                 <div class="choose-passenger">
-                                    <button type="button" class="choose-passenger__btn">
-                                        1 Passenger
+                                    <button type="button" class="choose-passenger__btn choose-pas-btn3">
+                                        <span class="choose-passenger__count choose-passenger-count3"> 3 </span> Passenger
                                         <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M17.0572 6.28543C16.8345 6.06281 16.5325 5.93774 16.2177 5.93774C15.9028 5.93774 15.6008 6.06281 15.3781 6.28543L9.49997 12.1636L3.62185 6.28543C3.39788 6.06911 3.09792 5.94942 2.78656 5.95213C2.4752 5.95483 2.17736 6.07972 1.95719 6.29989C1.73702 6.52006 1.61213 6.8179 1.60942 7.12926C1.60672 7.44062 1.72641 7.74059 1.94272 7.96455L8.66041 14.6822C8.8831 14.9049 9.18509 15.0299 9.49997 15.0299C9.81486 15.0299 10.1168 14.9049 10.3395 14.6822L17.0572 7.96455C17.2798 7.74186 17.4049 7.43987 17.4049 7.12499C17.4049 6.81011 17.2798 6.50812 17.0572 6.28543Z" fill="#142A38"/>
                                         </svg>
                                     </button>
-                                    <div class="passenger-window">
+                                    <div class="passenger-window pas-window3">
                                         <div class="passenger-window-header">
                                             <div class="passenger-btns">
-                                                <button type="button" class="travellersBtn passenger-btns__btn passenger-btns__btn_active">Travellers</button>
-                                                <button type="button" class="cabinClassBtn passenger-btns__btn">Cabin Class</button>
+                                                <button type="button" class="travellersBtn3  passenger-btns__btn passenger-btns__btn_active">Travellers</button>
+                                                <button type="button" class="cabinClassBtn3 passenger-btns__btn">Cabin Class</button>
                                             </div>
                                         </div>
                                         <div class="passenger-window-content">
-                                            <p class="passenger-way-name">Yerevan to Beirut  13 - 20 Feb</p>
-                                            <div class="travellers-counts">
+                                            <p class="passenger-way-name">Yerevan to Beirut 13 - 20 Feb</p>
+                                            <div class="travellers-counts travellers-counts3">
                                                 <div class="travellers-counts__item">
                                                     <div class="passenger-info">
                                                         <p class="passenger-info__title">Adults</p>
                                                         <span class="passenger-info__text"> > 12 years</span>
                                                     </div>
                                                     <div class="count-row">
-                                                        <button type="button" class="decrement-btn">-</button>
-                                                        <input type="number" class="quantity-input" name="quantity" value="1">
-                                                        <button type="button" class="increment-btn">+</button>
+                                                        <button type="button" class="decrement-btn decrement-btn3">-</button>
+                                                        <input type="number" class="quantity-input quantity-input3" name="quantity" value="1" id="adults3" >
+                                                        <button type="button" class="increment-btn increment-btn3">+</button>
                                                     </div>
                                                 </div>
                                                 <div class="travellers-counts__item">
@@ -342,9 +342,9 @@
                                                         <span class="passenger-info__text"> 2 - 12 years</span>
                                                     </div>
                                                     <div class="count-row">
-                                                        <button type="button" class="decrement-btn">-</button>
-                                                        <input type="number" class="quantity-input" name="quantity" value="1">
-                                                        <button type="button" class="increment-btn">+</button>
+                                                        <button type="button" class="decrement-btn decrement-btn3">-</button>
+                                                        <input type="number" class="quantity-input quantity-input3" name="quantity" value="1" id="children3">
+                                                        <button type="button" class="increment-btn increment-btn3">+</button>
                                                     </div>
                                                 </div>
                                                 <div class="travellers-counts__item">
@@ -353,20 +353,20 @@
                                                         <span class="passenger-info__text"> 0 - 1 years</span>
                                                     </div>
                                                     <div class="count-row">
-                                                        <button type="button" class="decrement-btn">-</button>
-                                                        <input type="number" class="quantity-input" name="quantity" value="1">
-                                                        <button type="button" class="increment-btn">+</button>
+                                                        <button type="button" class="decrement-btn decrement-btn3">-</button>
+                                                        <input type="number" class="quantity-input quantity-input3" name="quantity" value="1" id="infants3">
+                                                        <button type="button" class="increment-btn increment-btn3">+</button>
                                                     </div>
                                                 </div>
                                             </div>
 
-                                            <div class="cabin-class">
+                                            <div class="cabin-class cabin-class3">
                                                 <div class="cabin-class__item">
                                                     <div class="passenger-info">
                                                         <p class="passenger-info__title">Economy Class</p>
                                                     </div>
                                                     <div class="cabin-class-check">
-                                                        <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox" checked>
+                                                        <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox3" name="cabin class checkbox" checked>
                                                     </div>
                                                 </div>
                                                 <div class="cabin-class__item">
@@ -374,7 +374,7 @@
                                                         <p class="passenger-info__title">Premium Economy class</p>
                                                     </div>
                                                     <div class="cabin-class-check">
-                                                        <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                        <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox3" name="cabin class checkbox">
                                                     </div>
                                                 </div>
                                                 <div class="cabin-class__item">
@@ -382,7 +382,7 @@
                                                         <p class="passenger-info__title">Business Class</p>
                                                     </div>
                                                     <div class="cabin-class-check">
-                                                        <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                        <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox3" name="cabin class checkbox">
                                                     </div>
                                                 </div>
                                                 <div class="cabin-class__item">
@@ -390,13 +390,13 @@
                                                         <p class="passenger-info__title">First Class</p>
                                                     </div>
                                                     <div class="cabin-class-check">
-                                                        <input type="checkbox" class="cabin-class-checkbox" name="cabin class checkbox">
+                                                        <input type="checkbox" class="cabin-class-checkbox cabin-class-checkbox3" name="cabin class checkbox">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="passenger-window-footer">
-                                            <button type="button" class="passenger-done-btn">
+                                            <button type="button" class="passenger-done-btn pas-done-btn3">
                                                 <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M2 2L15 15M15 15H3.62471M15 15V3.62471" stroke="#FF6B00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
                                                 </svg>

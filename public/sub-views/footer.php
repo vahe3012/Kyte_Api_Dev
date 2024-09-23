@@ -137,6 +137,6 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../../public/js/rangeSlider.js"></script>
 <script src="../../public/js/script.js"></script>
-<script src="../../public/js/myscript.js"></script>
+<script src="../../public/js/passengerLogic.js"></script>
 </body>
 </html>
