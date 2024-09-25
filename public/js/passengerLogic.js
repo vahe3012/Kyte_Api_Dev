@@ -32,7 +32,9 @@ $(document).ready(function() {
     $('.decrement-btn1').on('click', function() {
         const $inputField1 = $(this).siblings('.quantity-input1');
         let currentValue1 = parseInt($inputField1.val());
-        if (currentValue1 > 0) {
+        if ($inputField1.attr('id') === 'adults1' && currentValue1 > 1) {
+            $inputField1.val(currentValue1 - 1);
+        } else if ($inputField1.attr('id') !== 'adults1' && currentValue1 > 0) {
             $inputField1.val(currentValue1 - 1);
         }
         updatePassengerCount1()
@@ -117,7 +119,9 @@ $(document).ready(function() {
     $('.decrement-btn2').on('click', function() {
         const $inputField2 = $(this).siblings('.quantity-input2');
         let currentValue2 = parseInt($inputField2.val());
-        if (currentValue2 > 0) {
+        if ($inputField2.attr('id') === 'adults2' && currentValue2 > 1) {
+            $inputField2.val(currentValue2 - 1);
+        } else if ($inputField2.attr('id') !== 'adults2' && currentValue2 > 0) {
             $inputField2.val(currentValue2 - 1);
         }
         updatePassengerCount2()
@@ -202,7 +206,9 @@ $(document).ready(function() {
     $('.decrement-btn3').on('click', function() {
         const $inputField3 = $(this).siblings('.quantity-input3');
         let currentValue3 = parseInt($inputField3.val());
-        if (currentValue3 > 0) {
+        if ($inputField3.attr('id') === 'adults3' && currentValue3 > 1) {
+            $inputField3.val(currentValue3 - 1);
+        } else if ($inputField3.attr('id') !== 'adults3' && currentValue3 > 0) {
             $inputField3.val(currentValue3 - 1);
         }
         updatePassengerCount3()
