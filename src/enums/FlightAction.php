@@ -24,18 +24,19 @@ enum FlightAction: string
      * Get the appropriate response for the action.
      *
      * @return string JSON-encoded response
-//     * @throws Exception\NotFoundException
+     * //     * @throws Exception\NotFoundException
      * @throws JsonException
-     * @throws SQL
+     * @throws SQL*@throws \JsonException
      */
     public function getResponse(): string
     {
         $postBody = file_get_contents('php://input');
 
+
+
+//        var_dump($postBody); die("sdsd");
+
         $postBody = json_decode($postBody);
-
-//        var_dump(json_encode($postBody), "sd"); die();
-
 
         $query = $_REQUEST['query'] ?? '';
 
@@ -61,10 +62,6 @@ enum FlightAction: string
                 self::DETAILS => $flight->offerDetails($query),
                 self::BUNDLES => $flight->shopBundles($query),
                 self::ANCILLARIES => $flight->shopAncillaries($query),
-//                self::UPDATE => $user->update($postBody),
-//                self::RETRIEVE_ALL => $user->retrieveAll(),
-//                self::RETRIEVE => $user->retrieve($userId),
-//                self::REMOVE => $user->remove($postBody),
             };
 
         } catch (InvalidValidationException $e) {
@@ -88,6 +85,6 @@ enum FlightAction: string
         }
 
 //        var_dump($response, "stex em lav"); die();
-        return json_encode($response);
+        return json_encode($response, JSON_THROW_ON_ERROR);
     }
 }

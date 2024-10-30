@@ -8,23 +8,23 @@ final class AirportDAL
 {
     public const TABLE_NAME = 'airports';
 
-
     public static function autocomplete($query): array
     {
-        $itemsBean = R::findAll(self::TABLE_NAME, ' name LIKE ? OR municipality LIKE ? ', ["%$query%", "%$query%"]);
+        $itemsBean = R::findAll(self::TABLE_NAME, ' name LIKE ? OR city LIKE ? ', ["%$query%", "%$query%"]);
 
         if (!$itemsBean) {
             return [];
         }
+        /** @var array $results */
         $results = array_map(
-            function ($itemBean): array {
+            static function ($itemBean): array {
                 return [
                     'name' => $itemBean->name,
-                    'municipality' => $itemBean->municipality,
+                    'municipality' => $itemBean->city,
                     'iata_code' => $itemBean->iata_code,
                 ];
             },
-            array_values($itemsBean) // Use array_values to get an indexed array
+            array_values($itemsBean)
         );
         return $results;
     }
