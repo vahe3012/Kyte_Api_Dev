@@ -1,6 +1,6 @@
 <?php
 $host = '127.0.0.1';
-$port = '3340'; // Replace 'your_custom_port' with the port specified in TablePlus
+$port = '3004'; // Replace 'your_custom_port' with the port specified in TablePlus
 $dbname = 'KyteApi';
 $username = 'root';
 $password = '';
@@ -15,3 +15,5 @@ try {
 } catch (PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
+
+

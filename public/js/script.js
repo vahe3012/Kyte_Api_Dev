@@ -98,47 +98,6 @@ if (modalBookingBg) {
     })
 }
 
-
-// ------ Flights filter function ------
-let flightsWayContent = document.querySelector('.flights-way-content')
-if (flightsWayContent) {
-    document.addEventListener("DOMContentLoaded", () => flightsFilterFunc(document.querySelector('.flights-steps__btn_active'), 'return'));
-    function flightsFilterFunc(clickedButton, category) {
-        document.querySelectorAll('.flights-way-block').forEach(item =>
-            item.classList.toggle('show', item.dataset.category === category)
-        );
-        document.querySelectorAll('.flights-steps__btn').forEach(button =>
-            button.classList.remove('flights-steps__btn_active')
-        );
-        clickedButton.classList.add('flights-steps__btn_active');
-    }
-
-    let multiCityBlock = document.querySelector('.multiCity-block'),
-        flightsWayCloneBbtn = document.querySelector('.flights-way-clone-btn'),
-        flightsWay = document.querySelector('.another-flight-item');
-
-
-    function countFlightItems() {
-        return multiCityBlock.querySelectorAll('.another-flight-item').length;
-    }
-
-    flightsWayCloneBbtn.addEventListener('click', () => {
-        if (countFlightItems() < 5) {
-            let clonedFlightsWay = flightsWay.cloneNode(true);
-            multiCityBlock.insertBefore(clonedFlightsWay, flightsWayCloneBbtn);
-        } else {
-            alert('You can only add up to 5 flight items.');
-        }
-    })
-
-    multiCityBlock.addEventListener('click', function (event) {
-        if (event.target.classList.contains('remove-btn')) {
-            event.target.parentElement.remove();
-        }
-    });
-}
-
-
 // ------ Main silde ------
 let sliderSection = document.querySelectorAll('.slider-section')
 if (sliderSection) {

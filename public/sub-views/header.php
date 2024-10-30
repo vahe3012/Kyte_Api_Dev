@@ -75,7 +75,8 @@ header('Content-Type: text/html');
                                           fill="#91A7A8"/>
                                 </svg>
                                 <label>
-                                    <input type="email" name="email" placeholder="Login" value="" required>
+                                    <input type="email" id="email" name="email" autocomplete="email" required />
+<!--                                    <input type="email" name="email" placeholder="Login" value="" required>-->
                                 </label>
                             </div>
                             <div class="login-window-form__item">
@@ -86,7 +87,8 @@ header('Content-Type: text/html');
                                           fill="#91A7A8"/>
                                 </svg>
                                 <label>
-                                    <input type="password" name="password" placeholder="Password" value="" required>
+                                    <input type="password" id="password" name="password" autocomplete="current-password" required />
+<!--                                    <input type="password" name="password" placeholder="Password" value="" required>-->
                                 </label>
                             </div>
                             <button type="submit" class="login-window__btn">

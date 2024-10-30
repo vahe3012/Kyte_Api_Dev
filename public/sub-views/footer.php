@@ -137,6 +137,38 @@
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 <script src="../../public/js/rangeSlider.js"></script>
 <script src="../../public/js/script.js"></script>
+<script src="../../public/js/autocomplete.js"></script>
 <script src="../../public/js/passengerLogic.js"></script>
+<script src="../../public/js/test.js"></script>
+<!--<script src="../../public/js/api.js"></script>-->
 </body>
+
+<style>
+    .results-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        border: 1px solid #ccc;
+        max-height: 200px;
+        overflow-y: auto;
+        display: none; /* Hide by default */
+    }
+
+    .results-list.show {
+        display: block; /* Show when results are available */
+    }
+
+    .results-list li {
+        padding: 8px;
+        cursor: pointer;
+    }
+
+    .results-list li:hover {
+        background-color: #f0f0f0;
+    }
+
+    .results-list li.selected {
+        background-color: #e0e0e0; /* Highlight selected item */
+    }
+</style>
 </html>
