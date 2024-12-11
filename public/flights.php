@@ -414,7 +414,7 @@
                                     </div>
                                 </div>
 
-                                <div class="another-flight-item 1">
+                                <div class="another-flight-item 1 flights-way-block">
                                     <button type="button" class="remove-btn">Remove</button>
                                     <div class="flights-way">
                                         <div class="flights-way__item">
@@ -459,7 +459,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="another-flight-item 2">
+                                <div class="another-flight-item 2 flights-way-block">
                                     <div class="flights-way">
                                         <div class="flights-way__item">
                                             <div class="flights-way-origin">
